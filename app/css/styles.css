@@ -658,7 +658,10 @@ textarea {
     font-size: 24px;
     color: #ffffff;
     font-weight: 300;
-    font-family: light; }
+    font-family: light;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
   .tag img {
     display: block; }
 
@@ -712,3 +715,53 @@ textarea {
     font-family: light; }
 
 /*----------end footer----------*/
+@media only screen and (max-width: 1200px) {
+  .container, .footer .container {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .header {
+    margin-bottom: 10px; }
+  .slogan {
+    font-size: 36px;
+    margin-bottom: 40px; }
+  img {
+    max-width: 100%; }
+  .tag {
+    width: 32%; } }
+
+@media only screen and (max-width: 850px) {
+  .tag {
+    width: 49%; }
+    .tag img {
+      width: 100%; }
+  .tag h6 {
+    font-size: 14px; }
+  .tag-sup {
+    font-size: 10px; } }
+
+@media only screen and (max-width: 600px) {
+  .subscribe input {
+    width: 100%;
+    margin: 0; }
+  .subscribe .button {
+    width: 100%;
+    margin-top: 10px; }
+  .foot_logo {
+    width: 94px; }
+  .footer address {
+    font-size: 12px; }
+  .logo {
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: block; } }
+
+@media only screen and (max-width: 500px) {
+  .tag {
+    width: 100%; }
+  .tag h6 {
+    font-size: 24px; }
+  .tag-sup {
+    font-size: 14px; }
+  .slogan {
+    font-size: 28px; } }
